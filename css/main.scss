@@ -176,6 +176,67 @@ $color-bg:#F7F7F7;
 
 
 
+/**
+ * Sudiptos Design
+ * */
+
+ .scontainer {
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 0 40px;
+ }
+
+ .sheader {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 999;
+
+    &__wpr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+    } 
+ }
+
+ .shero {
+    background-image: url(../image/Rectangle1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position: top right;
+    height: 80vh;
+    text-align: left;
+    padding: 0 40px;
+    text-align: justify;
+
+    @media screen and (max-width: 768px) {
+        
+    }
+
+    &__content {
+        max-width: 600px;
+        width: 100%;
+        background-color: $color-bg;
+        padding: 20px 30px 40px;
+        position: absolute;
+        bottom: -200px;
+
+        left: 5%;
+
+        @media screen and (max-width: 768px) {
+            max-width: 90%;
+            // position: relative;
+            // left: -25px;
+            // margin: 0 25px;
+            
+        }
+    }
+ }
+
 
 
 

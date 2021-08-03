@@ -161,4 +161,63 @@
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
+
+/**
+ * Sudiptos Design
+ * */
+.scontainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.sheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sheader__wpr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 40px;
+}
+
+.shero {
+  background-image: url(../image/Rectangle1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-position: top right;
+  height: 80vh;
+  text-align: left;
+  padding: 0 40px;
+  text-align: justify;
+}
+
+.shero__content {
+  max-width: 600px;
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 20px 30px 40px;
+  position: absolute;
+  bottom: -200px;
+  left: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .shero__content {
+    max-width: 90%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
