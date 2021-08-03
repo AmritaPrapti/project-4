@@ -10,6 +10,12 @@ $color-bg:#F7F7F7;
     box-sizing: border-box;
 }
 
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 
 
 .btn{
@@ -99,7 +105,7 @@ $color-bg:#F7F7F7;
 
 
 .header{
-    
+    position: relative;
 
     &__wrap{
     position: absolute;
@@ -112,7 +118,7 @@ $color-bg:#F7F7F7;
     }
     
         &__logo-1{
-            margin-left: 4rem;
+            padding-left: 5rem;
         }
 
         &__logo-2{
