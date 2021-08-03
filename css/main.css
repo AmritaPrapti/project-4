@@ -142,18 +142,11 @@
   color: #000000;
   position: absolute;
   bottom: -100px;
-  left: 30px;
+  left: 60px;
   -webkit-box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
           box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
   padding: 50px 90px 20px 70px;
   margin-right: 40px;
-}
-
-@media screen and (min-width: 1920px) {
-  .hero__content {
-    max-width: 60vh;
-    margin: 0 25px;
-  }
 }
 
 .about {
