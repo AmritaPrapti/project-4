@@ -105,11 +105,15 @@ $color-bg:#F7F7F7;
 
 
 .header{
-    position: relative;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 
     &__wrap{
-    position: absolute;
-    width: 100%;
+
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -158,6 +162,12 @@ $color-bg:#F7F7F7;
         box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
         padding: 50px 90px 20px 70px;
         margin-right: 40px;
+
+
+        @media screen and (min-width: 1920px) {
+            max-width: 60vh;
+            margin: 0 25px;    
+        }
        
     }
 
