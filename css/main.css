@@ -139,10 +139,8 @@
   background-color: #FFFFFF;
   color: #000000;
   position: absolute;
-  top: 65%;
-  left: 30%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  bottom: -100px;
+  left: 30px;
   -webkit-box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
           box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
   padding: 50px 90px 20px 70px;
