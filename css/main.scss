@@ -10,8 +10,8 @@ $color-bg:#F7F7F7;
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 1600px;
+.container {
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -154,8 +154,7 @@ $color-bg:#F7F7F7;
         color:$color-primary;
         position: absolute;
         bottom:-100px;
-        left: 30px;
-        
+        left: 30px;   
         box-shadow: -2px -3px 8px 5px rgba(0, 0, 0, 0.2);
         padding: 50px 90px 20px 70px;
         margin-right: 40px;
@@ -168,11 +167,12 @@ $color-bg:#F7F7F7;
 .about{
     margin-top: 10rem;
     display: flex;
-    padding: 0 40px;
+    padding: 0 5rem;
     justify-content: space-between;
     column-gap: 30px;
 }
    
+
 
 
 
