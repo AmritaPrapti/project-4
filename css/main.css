@@ -11,9 +11,12 @@
   padding: 0 40px;
 }
 
+.wrapper {
+  padding: 40px 40px;
+}
+
 .btn {
   border: none;
-  color: white;
   text-align: center;
   text-decoration: none;
   display: -webkit-box;
@@ -22,26 +25,31 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4px 2px;
   cursor: pointer;
   font-size: 1rem;
-  font-weight: bold;
-  padding: 10px 20px;
+  font-weight: 400;
 }
 
 .btn__icon {
-  margin-right: 6px;
+  margin-right: 5px;
 }
 
 .btn--primary {
   background-color: #F78065;
+  color: white;
+  padding: 10px 20px;
+  margin: 4px 2px;
+}
+
+.btn--secondary {
+  color: #F78065;
+  background-color: #FFFFFF;
 }
 
 .title {
   font-weight: 700;
   color: #000000;
   letter-spacing: .5;
-  text-align: justify;
 }
 
 .title--hero {
@@ -54,8 +62,21 @@
   color: #F78065;
 }
 
-.title--about {
+.title--card {
   font-size: 1.5rem;
+  white-space: nowrap;
+  max-width: 250px;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.title--card:hover {
+  overflow: visible;
+}
+
+.title--sub {
+  font-size: 2.3rem;
 }
 
 .text {
@@ -76,19 +97,21 @@
   color: #F78065;
 }
 
-.card {
-  text-align: center;
-  padding: 0 20px;
-}
-
-.card__image {
-  padding: 10px 30px;
+.text__team {
   margin-bottom: 20px;
 }
 
 .card__text {
   margin-bottom: 20px;
-  font-size: 1rem;
+}
+
+.card__image {
+  margin-bottom: 20px;
+}
+
+.card__image--about {
+  padding: 10px 30px;
+  text-align: center;
 }
 
 .header {
@@ -160,5 +183,55 @@
           justify-content: space-between;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+}
+
+.priority {
+  text-align: left;
+}
+
+.priority__header {
+  margin: 50px 0;
+}
+
+.priority__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.team__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.team__header {
+  margin-bottom: 10px;
+}
+
+.team__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding-left: 40px;
+}
+
+.advantage__header {
+  margin: 50px 0;
+}
+
+.advantage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 /*# sourceMappingURL=main.css.map */
