@@ -5,6 +5,16 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -79,6 +89,12 @@
   font-size: 2.3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+}
+
 .text {
   text-align: justify;
   font-weight: 200;
@@ -101,6 +117,12 @@
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .text {
+    text-align: center;
+  }
+}
+
 .card__text {
   margin-bottom: 20px;
 }
@@ -112,6 +134,12 @@
 .card__image--about {
   padding: 10px 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    text-align: center;
+  }
 }
 
 .header {
@@ -185,6 +213,17 @@
           column-gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+  }
+}
+
 .priority {
   text-align: left;
 }
@@ -203,11 +242,29 @@
   padding-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .priority__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+  }
+}
+
 .team__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 768px) {
+  .team__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .team__header {
@@ -223,8 +280,20 @@
   padding-left: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .team__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    row-gap: 30px;
+    text-align: center;
+  }
+}
+
 .advantage__header {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .advantage__container {
@@ -233,5 +302,112 @@
   display: flex;
   -webkit-column-gap: 40px;
           column-gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .advantage__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.footer {
+  background-color: #F7F7F7;
+  min-width: 1200px;
+  width: 100%;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  padding-left: 60px;
+}
+
+.footer__list--item {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+}
+
+.footer__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer__menu--item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 768px;
+    background-position: center;
+    height: 60vh;
+  }
+  .team__content, .footer__content, .card--one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__list {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .footer {
+    min-width: 768px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
